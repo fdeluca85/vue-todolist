@@ -43,7 +43,10 @@ const app = new Vue({
     methods:{
         addTodo:function(){
             if(this.inputValue != ""){
-                this.toDos.push(this.inputValue);
+                this.toDos.push(
+                    {
+                        text:this.inputValue, done:false
+                    });
                 this.inputValue = "";
             }
 

@@ -16,13 +16,29 @@ body {
 header {
   text-align: center;
 }
+li {
+  background: #eeeeee;
+}
+li:nth-child(odd) {
+  background: rgb(207, 245, 207);
+  border-radius: 10px;
+}
+/* ==========
+    container
+   ========== */
 .container {
   max-width: 1080px;
   margin: 20px auto;
 }
+/* ==========
+    header
+   ========== */
 .logo {
   height: 80px;
 }
+/* ==========
+    To Do list
+   ========== */
 .toDoList {
   background-color: #eeeeee;
   padding: 20px;
@@ -38,19 +54,35 @@ header {
 .toDoList li:not(:last-child) {
   /* border-bottom: 1px solid rgb(64, 91, 116); */
 }
-li {
-  background: #eeeeee;
-}
-li:nth-child(odd) {
-  background: rgb(207, 245, 207);
-  border-radius: 10px;
-}
-.fa-times {
-  text-decoration: none;
+.toDoList li i {
   color: red;
   cursor: pointer;
 }
-
 .done span {
   text-decoration: line-through;
+}
+
+/* ==========
+    To Do btn e input
+   ========== */
+.add-todo{
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.add-todo button{
+  border: none;
+  background-color: rgb(207, 245, 207);
+  padding:  5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-todo input{
+  border: none;
+  border: 1px solid #eeeeee;
+  padding:  5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
 }

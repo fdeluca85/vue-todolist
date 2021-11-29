@@ -56,9 +56,20 @@ const app = new Vue({
             console.log(this.toDos);
             this.toDos.splice(index,1)
         },
+
+        // ===== prova per cambiare valore done ==== //
+
+        // done: function() {
+        //     this.done == true
+        //     // console.log(this.done);
+        //     if (this.done == false) { // prova per cambiare valore done
+        //         this.done = true;
+        //     } this.done = false;
+        // },
         
 
     }
 
 
 });
+

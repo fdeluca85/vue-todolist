@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="toDoList">
                     <ul>
-                        <li v-for="(todoEntry, index) in toDos" :class="index == true ? 'done':''" ><span>{{todoEntry.text}} </span> <i class="fas fa-times"></i></li>
+                        <li v-for="(todoEntry, index) in toDos" :class="todoEntry.done == true ? "done" : '' " ><span>{{todoEntry.text}} </span> <i class="fas fa-times"></i></li>
                     </ul>
                 </div>
             </div>

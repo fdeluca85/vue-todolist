@@ -1,5 +1,4 @@
 // alert('hello')
-
 // Descrizione:
 // Rifare l'esercizio della to do list.
 // Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
@@ -15,3 +14,35 @@
 // Bonus:
 // 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
 // 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+
+const app = new Vue({
+    el:'#root',
+    data:{
+        toDos:[
+            {
+                text: 'Fare la spesa',
+                done: true
+            },
+            {
+                text: 'Studiare cap. 5',
+                done: false
+            },
+            {
+                text: 'Portare fuori il cane',
+                done: true
+            },
+            {
+                text: 'Comprare il regalo per mamma',
+                done: false
+            },
+
+        ]
+
+    },
+    methods:{
+        
+
+    }
+
+
+});

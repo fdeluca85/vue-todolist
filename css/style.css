@@ -36,7 +36,14 @@ header {
   font-size: 18px;
 }
 .toDoList li:not(:last-child) {
-  border-bottom: 1px solid rgb(64, 91, 116);
+  /* border-bottom: 1px solid rgb(64, 91, 116); */
+}
+li {
+  background: #eeeeee;
+}
+li:nth-child(odd) {
+  background: rgb(207, 245, 207);
+  border-radius: 10px;
 }
 .fa-times {
   text-decoration: none;
@@ -44,6 +51,6 @@ header {
   cursor: pointer;
 }
 
-.done {
+.done span {
   text-decoration: line-through;
 }

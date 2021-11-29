@@ -22,6 +22,10 @@
         <!-- corpo -->
         <main>
             <div class="container">
+                <div class="add-todo">
+                    <input  type="text" placeholder="testo" v-model="inputValue">
+                    <button @click='addTodo'>aggiungi</button>
+                </div>
                 <div class="toDoList">
                     <ul>
                         <li v-for="(todoEntry, index) in toDos" :class="todoEntry.done == true ? 'done' : '' " ><span>{{todoEntry.text}} </span> <i class="fas fa-times" @click='removeTodo(index)' ></i></li>

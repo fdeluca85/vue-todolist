@@ -36,14 +36,22 @@ const app = new Vue({
                 done: false
             },
 
-        ]
+        ],
+        inputValue:''
 
     },
     methods:{
+        addTodo:function(){
+            if(this.inputValue != ""){
+                this.toDos.push(this.inputValue);
+                this.inputValue = "";
+            }
+
+        },
         removeTodo: function(index){
             console.log(this.toDos);
             this.toDos.splice(index,1)
-        }
+        },
         
 
     }

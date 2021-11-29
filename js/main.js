@@ -40,6 +40,10 @@ const app = new Vue({
 
     },
     methods:{
+        removeTodo: function(index){
+            console.log(this.toDos);
+            this.toDos.splice(index,1)
+        }
         
 
     }

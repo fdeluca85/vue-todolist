@@ -38,6 +38,11 @@ header {
 .toDoList li:not(:last-child) {
   border-bottom: 1px solid rgb(64, 91, 116);
 }
+.fa-times {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
 
 .done {
   text-decoration: line-through;

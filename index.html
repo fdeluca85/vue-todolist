@@ -27,9 +27,10 @@
                     <button @click='addTodo'>Aggiungi</button>
                 </div>
                 <div class="toDoList">
-                    <ul>
+                    <ul v-if="toDos.length > 0">
                         <li v-for="(todoEntry, index) in toDos" :class="todoEntry.done == true ? 'done' : '' " ><span>{{todoEntry.text}} </span> <i class="fas fa-times" @click='removeTodo(index)' ></i></li>
                     </ul>
+                    <h2 v-else>Non ci sono to-do</h2>
                 </div>
             </div>
 
